@@ -44,6 +44,3 @@ def api_call():
         return "0"
     else:
         return "1"
-
-
-app.run()
