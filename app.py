@@ -46,4 +46,4 @@ def api_call():
         return "1"
 
 
-app.run(debug=True)
+app.run()
