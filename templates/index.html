@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admission Factor Main</title>
+</head>
+
+<body>
+    <h1>Model Test</h1>
+    <p>Enter your data</p>
+
+    <form action="/result" method="POST">
+        <select name="gender" required>
+            <option value="1">Female</option>
+            <option value="2">Male</option>
+        </select>
+        <input type="number" step=".01" name="gre" placeholder="GRE" required>
+        <input type="number" step=".01" name="gpa" placeholder="GPA" required>
+        <select name="income" required>
+            <option value="1">Low</option>
+            <option value="2">Medium</option>
+            <option value="3">High</option>
+        </select>
+        <select name="ethnic" required>
+            <option value="1">Hyspanic</option>
+            <option value="2">Asian</option>
+            <option value="3">African</option>
+        </select>
+        <select name="prestige" required>
+            <option value="1">High</option>
+            <option value="2">Medium-High</option>
+            <option value="3">Medium-Low</option>
+            <option value="3">Low</option>
+        </select>
+        <input type="submit">
+    </form>
+</body>
+
+</html>
