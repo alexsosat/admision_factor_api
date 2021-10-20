@@ -13,28 +13,76 @@
     <p>Enter your data</p>
 
     <form action="/result" method="POST">
-        <select name="gender" required>
-            <option value="1">Female</option>
-            <option value="2">Male</option>
-        </select>
-        <input type="number" step=".01" name="gre" placeholder="GRE" required>
-        <input type="number" step=".01" name="gpa" placeholder="GPA" required>
-        <select name="income" required>
-            <option value="1">Low</option>
-            <option value="2">Medium</option>
-            <option value="3">High</option>
-        </select>
-        <select name="ethnic" required>
-            <option value="1">Hyspanic</option>
-            <option value="2">Asian</option>
-            <option value="3">African</option>
-        </select>
-        <select name="prestige" required>
-            <option value="1">High</option>
-            <option value="2">Medium-High</option>
-            <option value="3">Medium-Low</option>
-            <option value="3">Low</option>
-        </select>
+        <div>
+            <h3>Radius</h3>
+            <input type="number" step=".000001" name="radius_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="radius_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="radius_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Texture</h3>
+            <input type="number" step=".000001" name="texture_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="texture_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="texture_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Perimeter</h3>
+            <input type="number" step=".000001" name="perimeter_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="perimeter_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="perimeter_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Area</h3>
+            <input type="number" step=".000001" name="area_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="area_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="area_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Smoothness</h3>
+            <input type="number" step=".000001" name="smoothness_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="smoothness_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="smoothness_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Compactness</h3>
+            <input type="number" step=".000001" name="compactness_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="compactness_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="compactness_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Concavity</h3>
+            <input type="number" step=".000001" name="concavity_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="concavity_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="concavity_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Concave Points</h3>
+            <input type="number" step=".000001" name="points_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="points_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="points_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Symmetry</h3>
+            <input type="number" step=".000001" name="symmetry_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="symmetry_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="symmetry_worst" placeholder="Worst" required>
+        </div>
+
+        <div>
+            <h3>Fractal Dimension</h3>
+            <input type="number" step=".000001" name="fractal_dimension_mean" placeholder="Mean" required>
+            <input type="number" step=".000001" name="fractal_dimension_se" placeholder="Se" required>
+            <input type="number" step=".000001" name="fractal_dimension_worst" placeholder="Worst" required>
+        </div>
+
         <input type="submit">
     </form>
 </body>
