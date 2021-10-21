@@ -1,3 +1,4 @@
+
 from flask import Flask, render_template, request
 import model
 
@@ -120,3 +121,5 @@ def api_call():
         )
 
         return class_prediction
+app.run(debug=True)
+

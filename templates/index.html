@@ -6,84 +6,151 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Admission Factor Main</title>
+    <!-- CSS only -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 </head>
 
 <body>
-    <h1>Model Test</h1>
-    <p>Enter your data</p>
-
+    <h1 style="text-align:center">Model Test</h1>
+    <p style="text-align:center">Enter your data</p>
     <form action="/result" method="POST">
-        <div>
-            <h3>Radius</h3>
-            <input type="number" step=".000001" name="radius_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="radius_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="radius_worst" placeholder="Worst" required>
-        </div>
+        <h3 style="text-align:center">Radius</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="radius_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="radius_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="radius_worst" placeholder="Worst" required>
+                </div>
+            </div>
+        <h3 style="text-align:center">Texture</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="texture_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="texture_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="texture_worst" placeholder="Worst" required>
+                </div>
+            </div>
+        <h3 style="text-align:center">Perimeter</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="perimeter_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="perimeter_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="perimeter_worst" placeholder="Worst" required>
+                </div>
+            </div>
+        <h3 style="text-align:center">Area</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="area_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="area_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="area_worst" placeholder="Worst" required>
+                </div>
+            </div>
 
-        <div>
-            <h3>Texture</h3>
-            <input type="number" step=".000001" name="texture_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="texture_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="texture_worst" placeholder="Worst" required>
-        </div>
+        <h3 style="text-align:center">Smoothness</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="smoothness_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="smoothness_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="smoothness_worst" placeholder="Worst" required>
+                </div>
+            </div>
+        <h3 style="text-align:center">Compactness</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="compactness_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="compactness_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="compactness_worst" placeholder="Worst" required>
+                </div>
+            </div>
 
-        <div>
-            <h3>Perimeter</h3>
-            <input type="number" step=".000001" name="perimeter_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="perimeter_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="perimeter_worst" placeholder="Worst" required>
-        </div>
+        <h3 style="text-align:center">Concavity</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="concavity_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="concavity_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="concavity_worst" placeholder="Worst" required>
+                </div>
+            </div>
 
-        <div>
-            <h3>Area</h3>
-            <input type="number" step=".000001" name="area_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="area_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="area_worst" placeholder="Worst" required>
-        </div>
+        <h3 style="text-align:center">Concave Points</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="points_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="points_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="points_worst" placeholder="Worst" required>
+                </div>
+            </div>
+        <h3 style="text-align:center">Symmetry</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="symmetry_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="symmetry_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="symmetry_worst" placeholder="Worst" required>
+                </div>
+            </div>
+        <h3 style="text-align:center">Fractal Dimension</h3>
+            <div class="form-row">        
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="fractal_dimension_mean" placeholder="Mean" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="fractal_dimension_se" placeholder="Se" required>
+                </div>
+                <div class="col">
+                    <input class="form-control" type="number" step=".000001" name="fractal_dimension_worst" placeholder="Worst" required>
+                </div>
+            </div>
 
-        <div>
-            <h3>Smoothness</h3>
-            <input type="number" step=".000001" name="smoothness_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="smoothness_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="smoothness_worst" placeholder="Worst" required>
-        </div>
+            
 
-        <div>
-            <h3>Compactness</h3>
-            <input type="number" step=".000001" name="compactness_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="compactness_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="compactness_worst" placeholder="Worst" required>
-        </div>
-
-        <div>
-            <h3>Concavity</h3>
-            <input type="number" step=".000001" name="concavity_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="concavity_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="concavity_worst" placeholder="Worst" required>
-        </div>
-
-        <div>
-            <h3>Concave Points</h3>
-            <input type="number" step=".000001" name="points_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="points_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="points_worst" placeholder="Worst" required>
-        </div>
-
-        <div>
-            <h3>Symmetry</h3>
-            <input type="number" step=".000001" name="symmetry_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="symmetry_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="symmetry_worst" placeholder="Worst" required>
-        </div>
-
-        <div>
-            <h3>Fractal Dimension</h3>
-            <input type="number" step=".000001" name="fractal_dimension_mean" placeholder="Mean" required>
-            <input type="number" step=".000001" name="fractal_dimension_se" placeholder="Se" required>
-            <input type="number" step=".000001" name="fractal_dimension_worst" placeholder="Worst" required>
-        </div>
-
-        <input type="submit">
+            <div class="container">
+                <div class="row">
+                    <div class="col">            
+                        
+                    </div>
+                    <div class="col">            
+                        <input class="btn btn-primary" type="submit">
+                    </div>
+                </div>
+            </div>
+</div>
     </form>
 </body>
 
