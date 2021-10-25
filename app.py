@@ -121,5 +121,3 @@ def api_call():
         )
 
         return class_prediction
-app.run(debug=True)
-
